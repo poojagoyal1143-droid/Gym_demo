@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime FitHit GYM | Omega City, Kharar (Near Chandigarh University)</title>
+  <meta name="description" content="Prime FitHit GYM in Omega City, Kharar near Chandigarh University. 10,000+ sq ft athletic powerhouse, CrossFit turf, imported heavy iron, posture-first coaching. 5.0★ Google Rating (554+ Reviews).">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#08080A',
+            obsidian: '#101114',
+            'obsidian-card': '#16181D',
+            'obsidian-border': 'rgba(255, 255, 255, 0.08)',
+            burgundy: '#800020',
+            crimson: '#9B111E',
+            steel: '#1E40AF',
+            electric: '#3B82F6',
+            ice: '#F8FAFC'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #08080A;
+      color: #F8FAFC;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #08080A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(155, 17, 30, 0.4);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9B111E;
+    }
+
+    /* Waveform Animation */
+    @keyframes wavePulse {
+      0%, 100% { height: 6px; opacity: 0.35; }
+      50% { height: 26px; opacity: 1; }
+    }
+    .wave-bar {
+      animation: wavePulse 1.2s ease-in-out infinite;
+    }
+    .wave-bar:nth-child(2) { animation-delay: 0.15s; }
+    .wave-bar:nth-child(3) { animation-delay: 0.3s; }
+    .wave-bar:nth-child(4) { animation-delay: 0.45s; }
+    .wave-bar:nth-child(5) { animation-delay: 0.6s; }
+    .wave-bar:nth-child(6) { animation-delay: 0.75s; }
+    .wave-bar:nth-child(7) { animation-delay: 0.9s; }
+
+    /* Shimmer Text */
+    @keyframes textShimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    .shimmer-text {
+      background: linear-gradient(90deg, rgba(248, 250, 252, 0.3) 0%, rgba(248, 250, 252, 0.95) 50%, rgba(248, 250, 252, 0.3) 100%);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textShimmer 2.5s infinite;
+    }
+
+    /* Subtle Glassmorphic Glows */
+    .glow-burgundy {
+      box-shadow: 0 0 40px -10px rgba(155, 17, 30, 0.35);
+    }
+    .glow-blue {
+      box-shadow: 0 0 35px -10px rgba(59, 130, 246, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-midnight text-ice antialiased min-h-screen">
+
+  <!-- ==========================================================================
+       1. THE "WAKE UP & TRAIN" ALARM ENTRANCE SEQUENCE (#entrance-alarm)
+       ========================================================================== -->
+  <div id="entrance-alarm" class="fixed inset-0 z-[100] bg-[#08080A] flex flex-col justify-between p-6 sm:p-10 select-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
+    <!-- Ambient Burgundy Gradient Background -->
+    <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-crimson/15 via-midnight/80 to-midnight"></div>
+
+    <!-- Top Status Bar -->
+    <div class="relative z-10 flex items-center justify-between text-xs tracking-wider text-slate-400 font-mono">
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-slate-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M2 20h2M7 20v-4M12 20v-8M17 20V4M22 20v-12"/>
+        </svg>
+        <span class="font-medium text-slate-300">FITHIT 5G</span>
+      </div>
+
+      <div class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300 tracking-widest uppercase">
+        OMEGA CITY • KHARAR
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-1.5 text-emerald-400">
+          <span class="text-[11px]">100%</span>
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="2" y="7" width="18" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+            <rect x="4" y="9" width="14" height="6" rx="1"/>
+            <path d="M22 11v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <button id="skip-alarm-btn" class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition-colors underline underline-offset-4 cursor-pointer">
+          Skip
+        </button>
+      </div>
+    </div>
+
+    <!-- Center Alarm Card & Real-Time Clock -->
+    <div class="relative z-10 max-w-lg w-full mx-auto my-auto flex flex-col items-center text-center">
+      <!-- Big Digital Clock -->
+      <div id="live-alarm-clock" class="text-6xl sm:text-7xl md:text-8xl font-black tracking-tight text-white mb-2 font-display drop-shadow-[0_0_35px_rgba(255,255,255,0.15)]">
+        05:30 AM
+      </div>
+      <div id="live-alarm-date" class="text-sm uppercase tracking-[0.25em] text-slate-400 mb-8 font-medium">
+        SATURDAY • TIME TO TRAIN
+      </div>
+
+      <!-- Alarm Card Box -->
+      <div class="w-full bg-obsidian/90 border border-white/10 rounded-2xl p-6 sm:p-7 backdrop-blur-xl shadow-2xl relative overflow-hidden">
+        <!-- Accent Glow Line -->
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-crimson to-transparent"></div>
+
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-2.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-crimson animate-ping"></span>
+            <span class="text-xs font-bold tracking-widest text-crimson uppercase">ALARM // TIME TO GRIND</span>
+          </div>
+          <!-- Pulsing Audio Waveform -->
+          <div class="flex items-center gap-1 h-7">
+            <span class="w-1 bg-crimson/80 rounded-full wave-bar"></span>
+            <span class="w-1 bg-crimson/80 rounded-full wave-bar"></span>
+            <span class="w-1 bg-crimson/80 rounded-full wave-bar"></span>
+            <span class="w-1 bg-crimson/80 rounded-full wave-bar"></span>
+            <span class="w-1 bg-crimson/80 rounded-full wave-bar"></span>
+            <span class="w-1 bg-crimson/80 rounded-full wave-bar"></span>
+            <span class="w-1 bg-crimson/80 rounded-full wave-bar"></span>
+          </div>
+        </div>
+
+        <h2 class="text-xl sm:text-2xl font-bold text-white mb-2 text-left">Prime FitHit GYM (Omega City)</h2>
+        <p class="text-sm text-slate-400 text-left mb-4 leading-relaxed">
+          Your workout won't do itself. 10,000+ sq ft of heavy iron and Olympic turf are waiting near Chandigarh University.
+        </p>
+
+        <div class="flex items-center justify-between pt-3 border-t border-white/5 text-xs text-slate-400">
+          <span>Plot B-01100077, Omega City</span>
+          <span class="text-emerald-400 font-medium">Open Daily • Till 10:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apple-Style Horizontal Slide to Unlock -->
+    <div class="relative z-10 max-w-md w-full mx-auto">
+      <div id="slider-track" class="relative h-16 w-full bg-white/[0.06] border border-white/15 rounded-full p-1.5 flex items-center overflow-hidden cursor-pointer shadow-inner">
+        <!-- Shimmering Text Instruction -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none pl-12 pr-4">
+          <span class="text-xs sm:text-sm font-semibold tracking-widest uppercase shimmer-text">
+            SLIDE TO WAKE UP & TRAIN →
+          </span>
+        </div>
+
+        <!-- Draggable Handle Knob -->
+        <div id="slider-knob" class="relative z-10 w-13 h-13 rounded-full bg-gradient-to-r from-crimson to-burgundy text-white flex items-center justify-center shadow-lg shadow-crimson/30 cursor-grab active:cursor-grabbing transform transition-transform duration-75">
+          <svg class="w-6 h-6 transform translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <p class="text-center text-[11px] text-slate-500 uppercase tracking-widest mt-3">
+        Drag slider or tap to enter gym
+      </p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. TOP NAVIGATION BAR
+       ========================================================================== -->
+  <header class="sticky top-0 z-50 bg-[#08080A]/90 backdrop-blur-md border-b border-white/10 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <!-- Logo Mark -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-crimson to-steel p-0.5 shadow-md shadow-crimson/20">
+          <div class="w-full h-full bg-midnight rounded-[10px] flex items-center justify-center">
+            <!-- Athletic Dumbbell Mark -->
+            <svg class="w-5 h-5 text-ice group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M6 5v14M18 5v14M2 9v6M22 9v6M6 12h12" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <span class="text-lg font-black tracking-wider text-white block font-display leading-none">PRIME FITHIT</span>
+          <span class="text-[10px] tracking-widest text-slate-400 font-medium uppercase mt-0.5 block">OMEGA CITY • NEAR CU</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#facilities" class="hover:text-white transition-colors">Facilities</a>
+        <a href="#diet-engine" class="hover:text-white transition-colors flex items-center gap-1.5 text-blue-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
+          Diet & BMI Engine
+        </a>
+        <a href="#plans" class="hover:text-white transition-colors">Plans</a>
+        <a href="#reviews" class="hover:text-white transition-colors">Reviews (554+)</a>
+        <a href="#location" class="hover:text-white transition-colors">Location</a>
+      </nav>
+
+      <!-- Right CTAs & Live Status -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        <!-- Live Status Pill -->
+        <div class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>OPEN TODAY • CLOSES 10:00 PM</span>
+        </div>
+
+        <!-- WhatsApp 1-Day Trial Button -->
+        <a href="https://wa.me/91837800084?text=Hi%20Prime%20FitHit%20team!%20I%20would%20like%20to%20claim%20my%20Free%201-Day%20Trial%20Pass%20at%20Omega%20City%20Kharar." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-gradient-to-r from-crimson to-burgundy text-white text-xs sm:text-sm font-bold tracking-wide shadow-lg shadow-crimson/25 hover:opacity-95 hover:scale-[1.02] active:scale-[0.98] transition-all">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.16 8.16 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23z"/>
+          </svg>
+          <span>Claim 1-Day Trial</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none" aria-label="Toggle Navigation">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-obsidian border-b border-white/10 px-6 py-4 space-y-3">
+      <a href="#facilities" class="block text-sm font-medium text-slate-300 hover:text-white py-1">Facilities</a>
+      <a href="#diet-engine" class="block text-sm font-medium text-blue-400 hover:text-blue-300 py-1">Diet & BMI Engine</a>
+      <a href="#plans" class="block text-sm font-medium text-slate-300 hover:text-white py-1">Membership Plans</a>
+      <a href="#reviews" class="block text-sm font-medium text-slate-300 hover:text-white py-1">Reviews (554+)</a>
+      <a href="#location" class="block text-sm font-medium text-slate-300 hover:text-white py-1">Location & Contact</a>
+      <div class="pt-2 text-xs text-emerald-400 font-medium">OPEN TODAY • CLOSES 10:00 PM</div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       3. HERO SECTION
+       ========================================================================== -->
+  <section class="relative pt-12 pb-20 sm:pt-20 sm:pb-28 overflow-hidden">
+    <!-- Ambient Radial Glows -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-crimson/20 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-32 w-96 h-96 bg-steel/20 rounded-full blur-[130px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <!-- Social Proof Pill -->
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-obsidian border border-white/10 text-xs font-semibold text-slate-200 mb-6 shadow-sm">
+          <span class="text-amber-400">★★★★★</span>
+          <span class="w-1 h-1 rounded-full bg-slate-500"></span>
+          <span>5.0 Rating on Google</span>
+          <span class="w-1 h-1 rounded-full bg-slate-500"></span>
+          <span class="text-slate-400">554+ Verified Reviews</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 font-display leading-[1.08]">
+          BUILT FOR DISCIPLINE.<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-crimson via-red-500 to-rose-400">
+            FORGED IN KHARAR.
+          </span>
+        </h1>
+
+        <!-- Subtext -->
+        <p class="text-base sm:text-lg text-slate-300 mb-8 leading-relaxed max-w-2xl font-normal">
+          The 5.0★ athletic powerhouse near Chandigarh University. Featuring over 10,000+ sq ft of functional CrossFit turf, modern imported heavy iron, and certified coaches focused on spinal biomechanics.
+        </p>
+
+        <!-- Dual CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-4 mb-12">
+          <!-- Primary CTA -->
+          <a href="https://wa.me/91837800084?text=Hi%20Prime%20FitHit%20team!%20I%20want%20to%20start%20my%20Free%201-Day%20Pass%20at%20Omega%20City." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="inline-flex items-center gap-2.5 px-6 sm:px-7 py-3.5 rounded-xl bg-gradient-to-r from-crimson to-burgundy text-white font-bold text-sm tracking-wide shadow-xl shadow-crimson/30 hover:scale-[1.02] active:scale-[0.98] transition-all">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.16 8.16 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23z"/>
+            </svg>
+            <span>Start Free 1-Day Pass (WhatsApp)</span>
+          </a>
+
+          <!-- Secondary CTA: Smooth scroll to Diet Engine -->
+          <a href="#diet-engine" 
+             class="inline-flex items-center gap-2 px-6 sm:px-7 py-3.5 rounded-xl bg-obsidian border border-electric/40 text-blue-300 font-semibold text-sm hover:bg-electric/10 hover:border-electric transition-all">
+            <svg class="w-4 h-4 text-electric" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            <span>Calculate My Diet & Macros</span>
+          </a>
+        </div>
+
+        <!-- Metric Highlights Bar -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/10">
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white font-display">10,000+</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider mt-0.5">SQ FT FACILITY</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-display">5.0 ★</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider mt-0.5">554+ GOOGLE REVIEWS</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-blue-400 font-display">4 MINS</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider mt-0.5">FROM CHANDIGARH UNIV</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-display">10:00 PM</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider mt-0.5">OPEN DAILY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. INDIAN DIET CHART & BMI BLUEPRINT ENGINE (LEAD GENERATION TOOL)
+       ========================================================================== -->
+  <section id="diet-engine" class="py-20 bg-obsidian relative border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-semibold text-blue-400 uppercase tracking-wider mb-3">
+          Free Interactive Fitness Tool
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display tracking-tight">
+          INDIAN DIET CHART & BMI BLUEPRINT ENGINE
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          Tailored specifically for Indian gym-goers with realistic kitchen staples (Paneer, Soya, Eggs, Dal, Chilla & Chicken). Calculate your exact macros and download your tailored daily blueprint.
+        </p>
+      </div>
+
+      <!-- Engine Interactive Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Step 1: User Inputs (5 Columns) -->
+        <div class="lg:col-span-5 bg-[#16181D] border border-white/10 rounded-2xl p-6 sm:p-7 shadow-xl">
+          <h3 class="text-base font-bold text-white mb-5 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-blue-600/30 text-blue-400 text-xs flex items-center justify-center font-bold">1</span>
+            Enter Your Physical Stats
+          </h3>
+
+          <form id="diet-form" class="space-y-4">
+            <!-- Gender Toggle -->
+            <div>
+              <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-1.5">Gender</label>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" data-gender="male" class="gender-btn active py-2.5 px-4 rounded-xl text-xs font-bold border border-blue-500 bg-blue-500/20 text-blue-300 transition-all">
+                  Male
+                </button>
+                <button type="button" data-gender="female" class="gender-btn py-2.5 px-4 rounded-xl text-xs font-bold border border-white/10 bg-white/5 text-slate-400 hover:text-white transition-all">
+                  Female
+                </button>
+              </div>
+            </div>
+
+            <!-- Age & Weight -->
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label for="input-age" class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-1.5">Age (Years)</label>
+                <input type="number" id="input-age" min="15" max="80" value="22" 
+                       class="w-full bg-[#101114] border border-white/10 rounded-xl px-3.5 py-2.5 text-white font-medium text-sm focus:outline-none focus:border-blue-500 transition-colors">
+              </div>
+              <div>
+                <label for="input-weight" class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-1.5">Current Weight (kg)</label>
+                <input type="number" id="input-weight" min="35" max="160" value="72" 
+                       class="w-full bg-[#101114] border border-white/10 rounded-xl px-3.5 py-2.5 text-white font-medium text-sm focus:outline-none focus:border-blue-500 transition-colors">
+              </div>
+            </div>
+
+            <!-- Height -->
+            <div>
+              <label for="input-height" class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-1.5">Height (cm)</label>
+              <input type="number" id="input-height" min="120" max="220" value="175" 
+                     class="w-full bg-[#101114] border border-white/10 rounded-xl px-3.5 py-2.5 text-white font-medium text-sm focus:outline-none focus:border-blue-500 transition-colors">
+            </div>
+
+            <!-- Fitness Goal (Radio Cards) -->
+            <div>
+              <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-1.5">Primary Fitness Goal</label>
+              <div class="space-y-2">
+                <label class="goal-option flex items-center justify-between p-3 rounded-xl border border-white/10 bg-white/5 cursor-pointer hover:border-blue-500/50 transition-all">
+                  <div class="flex items-center gap-3">
+                    <input type="radio" name="goal" value="fat_loss" class="text-blue-500 focus:ring-0">
+                    <div>
+                      <div class="text-xs font-bold text-white">Fat Loss (Shred & Tone)</div>
+                      <div class="text-[11px] text-slate-400">Caloric deficit, preserve lean muscle</div>
+                    </div>
+                  </div>
+                  <span class="text-[11px] font-semibold text-rose-400">-400 kcal</span>
+                </label>
+
+                <label class="goal-option flex items-center justify-between p-3 rounded-xl border border-blue-500 bg-blue-500/10 cursor-pointer transition-all">
+                  <div class="flex items-center gap-3">
+                    <input type="radio" name="goal" value="muscle_building" checked class="text-blue-500 focus:ring-0">
+                    <div>
+                      <div class="text-xs font-bold text-white">Muscle Building (Hypertrophy / Bulk)</div>
+                      <div class="text-[11px] text-slate-400">Caloric surplus, high protein synthesis</div>
+                    </div>
+                  </div>
+                  <span class="text-[11px] font-semibold text-emerald-400">+350 kcal</span>
+                </label>
+
+                <label class="goal-option flex items-center justify-between p-3 rounded-xl border border-white/10 bg-white/5 cursor-pointer hover:border-blue-500/50 transition-all">
+                  <div class="flex items-center gap-3">
+                    <input type="radio" name="goal" value="maintenance" class="text-blue-500 focus:ring-0">
+                    <div>
+                      <div class="text-xs font-bold text-white">Lean Maintenance (Recomposition)</div>
+                      <div class="text-[11px] text-slate-400">Maintain weight, increase stamina</div>
+                    </div>
+                  </div>
+                  <span class="text-[11px] font-semibold text-blue-400">Balanced</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Dietary Preference Toggle -->
+            <div>
+              <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-1.5">Dietary Preference</label>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" data-diet="veg" class="diet-btn active py-2.5 px-4 rounded-xl text-xs font-bold border border-emerald-500 bg-emerald-500/20 text-emerald-300 transition-all flex items-center justify-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  Pure Veg (Vegetarian)
+                </button>
+                <button type="button" data-diet="nonveg" class="diet-btn py-2.5 px-4 rounded-xl text-xs font-bold border border-white/10 bg-white/5 text-slate-400 hover:text-white transition-all flex items-center justify-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+                  Non-Veg
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Step 2: Live Computed Output Card (7 Columns) -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Metric Top Summary Card -->
+          <div class="bg-[#16181D] border border-white/10 rounded-2xl p-6 sm:p-7 shadow-xl">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-5">
+              <h3 class="text-base font-bold text-white flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-crimson/30 text-rose-400 text-xs flex items-center justify-center font-bold">2</span>
+                Your Computed Blueprint
+              </h3>
+              <span id="output-bmi-badge" class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                BMI: 23.5 (Normal Weight)
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-6">
+              <div class="bg-obsidian p-4 rounded-xl border border-white/5">
+                <div class="text-xs text-slate-400 uppercase tracking-wider">Daily Calories</div>
+                <div id="output-calories" class="text-2xl font-black text-white font-display mt-1">2,350</div>
+                <div class="text-[11px] text-slate-500">kcal / day</div>
+              </div>
+
+              <div class="bg-obsidian p-4 rounded-xl border border-white/5">
+                <div class="text-xs text-rose-400 uppercase tracking-wider font-semibold">Protein</div>
+                <div id="output-protein" class="text-2xl font-black text-white font-display mt-1">145g</div>
+                <div class="text-[11px] text-slate-500">~580 kcal</div>
+              </div>
+
+              <div class="bg-obsidian p-4 rounded-xl border border-white/5">
+                <div class="text-xs text-amber-400 uppercase tracking-wider font-semibold">Carbs</div>
+                <div id="output-carbs" class="text-2xl font-black text-white font-display mt-1">270g</div>
+                <div class="text-[11px] text-slate-500">~1,080 kcal</div>
+              </div>
+
+              <div class="bg-obsidian p-4 rounded-xl border border-white/5">
+                <div class="text-xs text-blue-400 uppercase tracking-wider font-semibold">Healthy Fats</div>
+                <div id="output-fats" class="text-2xl font-black text-white font-display mt-1">65g</div>
+                <div class="text-[11px] text-slate-500">~585 kcal</div>
+              </div>
+            </div>
+
+            <!-- Sample 1-Day Indian Meal Plan Box -->
+            <div class="bg-obsidian/70 border border-white/10 rounded-xl p-5">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200 flex items-center gap-2">
+                  <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  </svg>
+                  Customized 1-Day Indian Meal Plan (<span id="meal-plan-diet-type" class="text-emerald-400">Pure Veg</span>)
+                </h4>
+                <span class="text-[11px] text-slate-400">Realistic Local Ingredients</span>
+              </div>
+
+              <div id="meal-plan-content" class="space-y-3.5 text-xs">
+                <!-- Meal plan items injected dynamically by JS -->
+              </div>
+            </div>
+
+            <!-- Step 3: Direct WhatsApp Action Button -->
+            <div class="mt-6 pt-5 border-t border-white/10">
+              <a id="btn-whatsapp-diet" 
+                 href="#" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold text-sm tracking-wide flex items-center justify-center gap-3 shadow-lg shadow-emerald-900/30 transition-all hover:scale-[1.01] active:scale-[0.99]">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.16 8.16 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23z"/>
+                </svg>
+                <span>Get This Full Custom Diet Plan on WhatsApp →</span>
+              </a>
+              <p class="text-center text-[11px] text-slate-400 mt-2">
+                Sends your custom weight, calories & meal choices directly to Prime FitHit coaches for a 1-on-1 review.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. FACILITIES & REAL GOOGLE REVIEW HIGHLIGHTS
+       ========================================================================== -->
+  <section id="facilities" class="py-20 bg-midnight relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-crimson/15 border border-crimson/30 text-xs font-semibold text-rose-400 uppercase tracking-wider mb-3">
+          World-Class Infrastructure
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display tracking-tight">
+          BUILT FOR PERFORMANCE. ZERO COMPROMISE.
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          From the massive 100-foot sled turf to calibrated Olympic barbells, every square foot in Omega City is designed for serious progress.
+        </p>
+      </div>
+
+      <!-- 4 Clean Feature Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+        <!-- Feature 1 -->
+        <div class="bg-obsidian border border-white/10 hover:border-crimson/50 rounded-2xl p-7 transition-all hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-xl bg-crimson/20 border border-crimson/30 text-rose-400 flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-105 transition-transform">
+            01
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 font-display">10,000+ Sq Ft Facility & Functional CrossFit Turf</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            High-density 100-ft sprint turf, heavy prowler sleds, plyometric boxes, battle ropes, and open floor space for Olympic lifts, agility drills, and functional conditioning.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-400">
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Prowler Sleds</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Battle Ropes</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Plyo Boxes</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Kettlebell Arsenal</span>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-obsidian border border-white/10 hover:border-steel/60 rounded-2xl p-7 transition-all hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-xl bg-steel/20 border border-steel/30 text-blue-400 flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-105 transition-transform">
+            02
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 font-display">Precision Biomechanical & Posture Guidance</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Certified fitness coaches who actively audit deadlift and squat kinematics, correct spinal curvature, and prevent injuries. The primary reason for our verified 5.0★ Google standing.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-400">
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Posture Audit</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Spinal Alignment</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Form Correction</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Certified Trainers</span>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-obsidian border border-white/10 hover:border-crimson/50 rounded-2xl p-7 transition-all hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-xl bg-crimson/20 border border-crimson/30 text-rose-400 flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-105 transition-transform">
+            03
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 font-display">Heavy Iron & Modern Imported Strength Machines</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Calibrated plate-loaded lever machines, isolated cable crossover rigs, Olympic power cages, and heavy dumbbell banks extending up to 50kg+ for progressive overload.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-400">
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Dumbbells up to 50kg</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Calibrated Plates</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Power Racks</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Dual Cable Stacks</span>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-obsidian border border-white/10 hover:border-steel/60 rounded-2xl p-7 transition-all hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-xl bg-steel/20 border border-steel/30 text-blue-400 flex items-center justify-center font-bold text-lg mb-5 group-hover:scale-105 transition-transform">
+            04
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 font-display">High Hygiene, Clean Restrooms & On-Site Parking</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Pristine changing areas, sanitized locker facilities, high-pressure showers, continuous air filtration, and ample parking space for cars and bikes in Omega City.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-400">
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Clean Showers</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Private Lockers</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Car & Bike Parking</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/5">Full Air Conditioning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Google Reviews Highlights -->
+      <div id="reviews" class="bg-obsidian border border-white/10 rounded-2xl p-8 sm:p-10 relative overflow-hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 pb-6 border-b border-white/10">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-amber-400 text-lg">★★★★★</span>
+              <span class="text-white font-bold text-lg">5.0 / 5.0</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white font-display">Verified Google Review Highlights</h3>
+            <p class="text-xs sm:text-sm text-slate-400">Real feedback from 554+ verified members in Kharar & Chandigarh University.</p>
+          </div>
+
+          <a href="https://maps.google.com/?q=Prime+FitHit+GYM+Omega+City+Kharar" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 text-xs font-semibold text-white tracking-wide transition-colors">
+            <span>View all 554+ Reviews on Google Maps</span>
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- 3 Verbatim Google Review Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-[#16181D] border border-white/5 rounded-xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="text-amber-400 text-sm mb-3">★★★★★</div>
+              <p class="text-xs sm:text-sm text-slate-300 italic mb-4 leading-relaxed">
+                "Amazing workout environment with professional staff and quality equipment. The trainers actually focus on proper technique rather than leaving you alone."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-white/5 flex items-center justify-between">
+              <span class="text-xs font-bold text-white">Aman Sharma</span>
+              <span class="text-[11px] text-slate-400">CU Student</span>
+            </div>
+          </div>
+
+          <div class="bg-[#16181D] border border-white/5 rounded-xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="text-amber-400 text-sm mb-3">★★★★★</div>
+              <p class="text-xs sm:text-sm text-slate-300 italic mb-4 leading-relaxed">
+                "Trainers focus on proper techniques, large space for CrossFit area. Turf is top quality and open till 10 PM makes it easy after evening college classes."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-white/5 flex items-center justify-between">
+              <span class="text-xs font-bold text-white">Navneet Singh</span>
+              <span class="text-[11px] text-slate-400">Kharar Resident</span>
+            </div>
+          </div>
+
+          <div class="bg-[#16181D] border border-white/5 rounded-xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="text-amber-400 text-sm mb-3">★★★★★</div>
+              <p class="text-xs sm:text-sm text-slate-300 italic mb-4 leading-relaxed">
+                "4 years with this organisation, loved the service. Cleanliness is top tier and coaches give genuine posture corrections on deadlifts."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-white/5 flex items-center justify-between">
+              <span class="text-xs font-bold text-white">Gurpreet Kaur</span>
+              <span class="text-[11px] text-slate-400">4-Year Member</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. MEMBERSHIP PLANS (INCLUDES CU STUDENT SPECIAL)
+       ========================================================================== -->
+  <section id="plans" class="py-20 bg-obsidian border-y border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-crimson/15 border border-crimson/30 text-xs font-semibold text-rose-400 uppercase tracking-wider mb-3">
+          Transparent Memberships
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display tracking-tight">
+          INVEST IN YOUR STRENGTH. NO HIDDEN FEES.
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          Special discounted rates available for Chandigarh University (CU) students with valid ID cards.
+        </p>
+      </div>
+
+      <!-- 3-Tier Card Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <!-- Plan 1: Monthly -->
+        <div class="bg-[#16181D] border border-white/10 rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Standard Access</div>
+            <h3 class="text-2xl font-bold text-white mb-2 font-display">Monthly Pass</h3>
+            <p class="text-xs text-slate-400 mb-6">Ideal for month-to-month flexibility without long commitments.</p>
+
+            <div class="mb-6 pb-6 border-b border-white/10">
+              <span class="text-4xl font-extrabold text-white font-display">₹1,800</span>
+              <span class="text-xs text-slate-400 font-medium">/ month</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>Full access to 10,000+ sq ft floor & heavy iron</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>Functional CrossFit Turf & sled track</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>Daily locker access & clean shower rooms</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>Floor coach assistance & form correction</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/91837800084?text=Hi%20Prime%20FitHit%20team!%20I%20want%20to%20inquire%20about%20the%20Monthly%20Pass%20(%E2%82%B91,800)%20at%20Omega%20City." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="w-full py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors">
+            Join via WhatsApp
+          </a>
+        </div>
+
+        <!-- Plan 2: CU Student Semester Pass (HIGHLIGHTED) -->
+        <div class="bg-[#1A1D24] border-2 border-crimson rounded-2xl p-7 flex flex-col justify-between relative shadow-2xl glow-burgundy">
+          <!-- Featured Badge -->
+          <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 px-4 py-1 rounded-full bg-crimson text-white text-[11px] font-bold uppercase tracking-wider shadow-md">
+            Save 30% with Student ID + Free Diet Chart
+          </div>
+
+          <div>
+            <div class="text-xs font-bold text-rose-400 uppercase tracking-wider mb-2 mt-1">CU Special Term</div>
+            <h3 class="text-2xl font-bold text-white mb-2 font-display">CU Student Semester Pass</h3>
+            <p class="text-xs text-slate-400 mb-6">Designed directly around Chandigarh University's academic semester.</p>
+
+            <div class="mb-6 pb-6 border-b border-white/10">
+              <span class="text-4xl font-extrabold text-white font-display">₹6,500</span>
+              <span class="text-xs text-slate-400 font-medium">/ 6 months (~₹1,080/mo)</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-200 mb-8">
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span class="font-semibold text-white">Free Custom Indian Diet & Macro Blueprint</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>Full access to 10,000+ sq ft floor & CrossFit turf</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span class="font-semibold text-white">Exam Freeze Policy: Pause plan during finals</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>Free Biomechanical Posture Evaluation</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>Valid with Chandigarh University Student ID</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/91837800084?text=Hi%20Prime%20FitHit%20team!%20I%20am%20a%20Chandigarh%20University%20student%20and%20want%20to%20claim%20the%20Semester%20Student%20Pass%20(%E2%82%B96,500)%20with%20free%20diet%20chart." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-crimson to-burgundy text-white font-bold text-xs uppercase tracking-wider text-center shadow-lg shadow-crimson/30 hover:opacity-95 transition-all">
+            Claim Student Offer on WhatsApp
+          </a>
+        </div>
+
+        <!-- Plan 3: Annual -->
+        <div class="bg-[#16181D] border border-white/10 rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Long-Term Elite</div>
+            <h3 class="text-2xl font-bold text-white mb-2 font-display">Annual Transformation</h3>
+            <p class="text-xs text-slate-400 mb-6">For committed athletes seeking complete physical transformation.</p>
+
+            <div class="mb-6 pb-6 border-b border-white/10">
+              <span class="text-4xl font-extrabold text-white font-display">₹13,500</span>
+              <span class="text-xs text-slate-400 font-medium">/ year (~₹1,125/mo)</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>365 days of unlimited sanctuary access</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>1-on-1 monthly trainer posture & progress checks</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>2 Free Guest passes every month</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>Custom nutritional guidance & periodic updates</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/91837800084?text=Hi%20Prime%20FitHit%20team!%20I%20want%20to%20enroll%20in%20the%20Annual%20Transformation%20Pass%20(%E2%82%B913,500)%20at%20Omega%20City." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="w-full py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors">
+            Join Annual via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. LOCATION, MAP & CONTACT HUB
+       ========================================================================== -->
+  <section id="location" class="py-20 bg-midnight relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Address & Contact Info (5 Columns) -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-slate-300 uppercase tracking-wider mb-3">
+              Location & Hours
+            </div>
+            <h2 class="text-3xl font-extrabold text-white font-display tracking-tight">
+              FIND PRIME FITHIT GYM
+            </h2>
+            <p class="text-slate-400 text-sm mt-2">
+              Located right inside Omega City, conveniently accessible for both Chandigarh University students and local Kharar residents.
+            </p>
+          </div>
+
+          <!-- Address Card -->
+          <div class="bg-obsidian border border-white/10 rounded-2xl p-6">
+            <div class="flex items-start gap-3.5 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-crimson/20 border border-crimson/30 text-rose-400 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-white uppercase tracking-wider">Exact Address</h3>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                  Plot No. B-01100077, Omega City, near Chandigarh University (CU), Kharar, Punjab 140301
+                </p>
+                <div class="mt-2.5 inline-block text-[11px] font-semibold text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-md border border-blue-500/20">
+                  Approx. 4 Mins from CU Main Campus
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-steel/20 border border-steel/30 text-blue-400 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-white uppercase tracking-wider">Gym Operating Hours</h3>
+                <p class="text-xs text-slate-300 mt-1">
+                  Monday to Sunday: <span class="font-semibold text-emerald-400">06:00 AM – 10:00 PM</span>
+                </p>
+                <p class="text-[11px] text-slate-400 mt-0.5">Open every single day without breaks.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Call & WhatsApp Buttons -->
+          <div class="grid grid-cols-2 gap-3">
+            <a href="tel:+91837800084" 
+               class="py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              <span>Call +91 83780 00084</span>
+            </a>
+
+            <a href="https://wa.me/91837800084?text=Hi%20Prime%20FitHit%20team!%20I%20have%20a%20query%20about%20your%20gym%20location%20and%20timings." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="py-3 px-4 rounded-xl bg-gradient-to-r from-crimson to-burgundy text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md shadow-crimson/20 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.16 8.16 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23z"/>
+              </svg>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Embedded Google Map Container (7 Columns) -->
+        <div class="lg:col-span-7 bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-2xl h-[420px] relative">
+          <iframe 
+            title="Prime FitHit GYM Location Map" 
+            src="https://maps.google.com/maps?q=Prime+FitHit+GYM+Plot+No.+B-01100077+Omega+City+Kharar+Punjab&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(100%);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <!-- Map overlay pill -->
+          <div class="absolute bottom-4 left-4 bg-obsidian/90 backdrop-blur-md border border-white/15 px-3.5 py-2 rounded-xl text-xs font-semibold text-white shadow-lg pointer-events-none">
+            📍 Omega City, Kharar (Near CU Gate)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="bg-obsidian border-t border-white/10 py-10 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="font-bold text-white tracking-wider block font-display">PRIME FITHIT GYM</span>
+        <span class="text-[11px] text-slate-500">Plot B-01100077, Omega City, near Chandigarh University, Kharar, Punjab 140301</span>
+      </div>
+      <div class="text-slate-500 text-[11px]">
+        © 2026 Prime FitHit GYM. All rights reserved. Direct Helpline: +91 83780 00084.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PERSISTENT FLOATING WHATSAPP BUBBLE
+       ========================================================================== -->
+  <a href="https://wa.me/91837800084?text=Hi%20Prime%20FitHit%20coach!%20I%20have%20a%20question%20about%20joining%20the%20gym." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-emerald-600 to-teal-700 text-white font-bold text-xs uppercase tracking-wider shadow-2xl shadow-emerald-900/40 hover:scale-105 active:scale-95 transition-all">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.16 8.16 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23z"/>
+    </svg>
+    <span class="hidden sm:inline">Chat with Coach (Instant Reply)</span>
+    <span class="sm:hidden">Coach WhatsApp</span>
+  </a>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    // -------------------------------------------------------------------------
+    // 1. Web Audio API Procedural Synthesizer
+    // -------------------------------------------------------------------------
+    class TacticalAudioEngine {
+      constructor() {
+        this.ctx = null;
+      }
+      init() {
+        if (!this.ctx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (AudioContextClass) this.ctx = new AudioContextClass();
+        }
+        if (this.ctx && this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+      }
+      playUnlockSound() {
+        try {
+          this.init();
+          if (!this.ctx) return;
+          const t = this.ctx.currentTime;
+          
+          // Punchy click transient
+          const osc1 = this.ctx.createOscillator();
+          const gain1 = this.ctx.createGain();
+          osc1.type = 'triangle';
+          osc1.frequency.setValueAtTime(1400, t);
+          osc1.frequency.exponentialRampToValueAtTime(120, t + 0.08);
+          gain1.gain.setValueAtTime(0.2, t);
+          gain1.gain.exponentialRampToValueAtTime(0.001, t + 0.08);
+          osc1.connect(gain1);
+          gain1.connect(this.ctx.destination);
+          osc1.start(t);
+          osc1.stop(t + 0.09);
+
+          // Deep Velvet Bass Drop
+          const osc2 = this.ctx.createOscillator();
+          const gain2 = this.ctx.createGain();
+          osc2.type = 'sine';
+          osc2.frequency.setValueAtTime(130, t + 0.02);
+          osc2.frequency.exponentialRampToValueAtTime(45, t + 0.4);
+          gain2.gain.setValueAtTime(0.35, t + 0.02);
+          gain2.gain.exponentialRampToValueAtTime(0.001, t + 0.45);
+          osc2.connect(gain2);
+          gain2.connect(this.ctx.destination);
+          osc2.start(t + 0.02);
+          osc2.stop(t + 0.46);
+        } catch (e) {
+          console.warn("Audio play error", e);
+        }
+      }
+      playTapSound() {
+        try {
+          this.init();
+          if (!this.ctx) return;
+          const t = this.ctx.currentTime;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(800, t);
+          gain.gain.setValueAtTime(0.05, t);
+          gain.gain.exponentialRampToValueAtTime(0.001, t + 0.04);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start(t);
+          osc.stop(t + 0.05);
+        } catch (e) {}
+      }
+    }
+    const audioEngine = new TacticalAudioEngine();
+
+    // -------------------------------------------------------------------------
+    // 2. Real-Time Alarm Clock
+    // -------------------------------------------------------------------------
+    function updateAlarmClock() {
+      const clockEl = document.getElementById('live-alarm-clock');
+      const dateEl = document.getElementById('live-alarm-date');
+      if (!clockEl || !dateEl) return;
+
+      const now = new Date();
+      let hours = now.getHours();
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12 || 12;
+      const formattedHours = String(hours).padStart(2, '0');
+
+      clockEl.textContent = `${formattedHours}:${minutes} ${ampm}`;
+
+      const days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+      dateEl.textContent = `${days[now.getDay()]} • TIME TO TRAIN`;
+    }
+    updateAlarmClock();
+    setInterval(updateAlarmClock, 1000);
+
+    // -------------------------------------------------------------------------
+    // 3. Apple-Style Horizontal Slide to Unlock
+    // -------------------------------------------------------------------------
+    function initSlider() {
+      const track = document.getElementById('slider-track');
+      const knob = document.getElementById('slider-knob');
+      const entrance = document.getElementById('entrance-alarm');
+      const skipBtn = document.getElementById('skip-alarm-btn');
+      if (!track || !knob || !entrance) return;
+
+      let isDragging = false;
+      let startX = 0;
+      let currentX = 0;
+
+      function getMaxDrag() {
+        return track.clientWidth - knob.clientWidth - 12; // 12px for padding
+      }
+
+      function unlock() {
+        audioEngine.playUnlockSound();
+        entrance.style.transform = 'translateY(-100%)';
+        entrance.style.opacity = '0';
+        setTimeout(() => {
+          entrance.classList.add('hidden');
+        }, 700);
+      }
+
+      // Mouse drag handlers
+      knob.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX - currentX;
+        knob.style.transition = 'none';
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const maxDrag = getMaxDrag();
+        let newX = e.clientX - startX;
+        if (newX < 0) newX = 0;
+        if (newX > maxDrag) newX = maxDrag;
+        currentX = newX;
+        knob.style.transform = `translateX(${currentX}px)`;
+
+        // If dragged more than 75%
+        if (currentX >= maxDrag * 0.78) {
+          isDragging = false;
+          knob.style.transform = `translateX(${maxDrag}px)`;
+          unlock();
+        }
+      });
+
+      window.addEventListener('mouseup', () => {
+        if (!isDragging) return;
+        isDragging = false;
+        knob.style.transition = 'transform 0.3s ease-out';
+        currentX = 0;
+        knob.style.transform = 'translateX(0px)';
+      });
+
+      // Touch handlers (Mobile)
+      knob.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].clientX - currentX;
+        knob.style.transition = 'none';
+      }, { passive: true });
+
+      window.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const maxDrag = getMaxDrag();
+        let newX = e.touches[0].clientX - startX;
+        if (newX < 0) newX = 0;
+        if (newX > maxDrag) newX = maxDrag;
+        currentX = newX;
+        knob.style.transform = `translateX(${currentX}px)`;
+
+        if (currentX >= maxDrag * 0.78) {
+          isDragging = false;
+          knob.style.transform = `translateX(${maxDrag}px)`;
+          unlock();
+        }
+      }, { passive: true });
+
+      window.addEventListener('touchend', () => {
+        if (!isDragging) return;
+        isDragging = false;
+        knob.style.transition = 'transform 0.3s ease-out';
+        currentX = 0;
+        knob.style.transform = 'translateX(0px)';
+      });
+
+      // Tap Fallback: Clicking anywhere on the track also unlocks smoothly
+      track.addEventListener('click', (e) => {
+        if (isDragging) return;
+        const maxDrag = getMaxDrag();
+        knob.style.transition = 'transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)';
+        knob.style.transform = `translateX(${maxDrag}px)`;
+        setTimeout(unlock, 250);
+      });
+
+      // Skip Button
+      if (skipBtn) {
+        skipBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          unlock();
+        });
+      }
+    }
+    initSlider();
+
+    // -------------------------------------------------------------------------
+    // 4. Mobile Navigation Menu Toggle
+    // -------------------------------------------------------------------------
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // 5. Indian Diet Chart & BMI Blueprint Engine
+    // -------------------------------------------------------------------------
+    const state = {
+      gender: 'male',
+      age: 22,
+      weight: 72,
+      height: 175,
+      goal: 'muscle_building', // fat_loss | muscle_building | maintenance
+      diet: 'veg'              // veg | nonveg
+    };
+
+    // Form element bindings
+    const genderBtns = document.querySelectorAll('.gender-btn');
+    const dietBtns = document.querySelectorAll('.diet-btn');
+    const inputAge = document.getElementById('input-age');
+    const inputWeight = document.getElementById('input-weight');
+    const inputHeight = document.getElementById('input-height');
+    const goalRadios = document.querySelectorAll('input[name="goal"]');
+
+    genderBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        audioEngine.playTapSound();
+        genderBtns.forEach(b => {
+          b.classList.remove('active', 'border-blue-500', 'bg-blue-500/20', 'text-blue-300');
+          b.classList.add('border-white/10', 'bg-white/5', 'text-slate-400');
+        });
+        btn.classList.add('active', 'border-blue-500', 'bg-blue-500/20', 'text-blue-300');
+        btn.classList.remove('border-white/10', 'bg-white/5', 'text-slate-400');
+        state.gender = btn.dataset.gender;
+        computeDietBlueprint();
+      });
+    });
+
+    dietBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        audioEngine.playTapSound();
+        dietBtns.forEach(b => {
+          b.classList.remove('active', 'border-emerald-500', 'bg-emerald-500/20', 'text-emerald-300', 'border-rose-500', 'bg-rose-500/20', 'text-rose-300');
+          b.classList.add('border-white/10', 'bg-white/5', 'text-slate-400');
+        });
+        const isVeg = btn.dataset.diet === 'veg';
+        btn.classList.add('active');
+        if (isVeg) {
+          btn.classList.add('border-emerald-500', 'bg-emerald-500/20', 'text-emerald-300');
+        } else {
+          btn.classList.add('border-rose-500', 'bg-rose-500/20', 'text-rose-300');
+        }
+        btn.classList.remove('border-white/10', 'bg-white/5', 'text-slate-400');
+        state.diet = btn.dataset.diet;
+        computeDietBlueprint();
+      });
+    });
+
+    inputAge.addEventListener('input', (e) => {
+      state.age = Math.max(12, Math.min(90, parseInt(e.target.value) || 22));
+      computeDietBlueprint();
+    });
+    inputWeight.addEventListener('input', (e) => {
+      state.weight = Math.max(30, Math.min(200, parseFloat(e.target.value) || 72));
+      computeDietBlueprint();
+    });
+    inputHeight.addEventListener('input', (e) => {
+      state.height = Math.max(100, Math.min(230, parseFloat(e.target.value) || 175));
+      computeDietBlueprint();
+    });
+
+    goalRadios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        audioEngine.playTapSound();
+        document.querySelectorAll('.goal-option').forEach(l => {
+          l.classList.remove('border-blue-500', 'bg-blue-500/10');
+          l.classList.add('border-white/10', 'bg-white/5');
+        });
+        radio.closest('.goal-option').classList.add('border-blue-500', 'bg-blue-500/10');
+        radio.closest('.goal-option').classList.remove('border-white/10', 'bg-white/5');
+        state.goal = radio.value;
+        computeDietBlueprint();
+      });
+    });
+
+    function computeDietBlueprint() {
+      // 1. Calculate BMI
+      const heightInMeters = state.height / 100;
+      const bmi = (state.weight / (heightInMeters * heightInMeters)).toFixed(1);
+      
+      let bmiCategory = 'Normal Weight';
+      let bmiColorClass = 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30';
+      if (bmi < 18.5) {
+        bmiCategory = 'Underweight';
+        bmiColorClass = 'bg-blue-500/20 text-blue-400 border-blue-500/30';
+      } else if (bmi >= 25 && bmi < 29.9) {
+        bmiCategory = 'Overweight';
+        bmiColorClass = 'bg-amber-500/20 text-amber-400 border-amber-500/30';
+      } else if (bmi >= 30) {
+        bmiCategory = 'Obese';
+        bmiColorClass = 'bg-rose-500/20 text-rose-400 border-rose-500/30';
+      }
+
+      const bmiBadgeEl = document.getElementById('output-bmi-badge');
+      if (bmiBadgeEl) {
+        bmiBadgeEl.className = `px-3 py-1 rounded-full text-xs font-bold border ${bmiColorClass}`;
+        bmiBadgeEl.textContent = `BMI: ${bmi} (${bmiCategory})`;
+      }
+
+      // 2. Basal Metabolic Rate (Mifflin-St Jeor)
+      let bmr = (10 * state.weight) + (6.25 * state.height) - (5 * state.age);
+      if (state.gender === 'male') {
+        bmr += 5;
+      } else {
+        bmr -= 161;
+      }
+      
+      // Activity factor: Moderate gym workouts (1.45)
+      const tdee = Math.round(bmr * 1.45);
+      
+      let targetCalories = tdee;
+      if (state.goal === 'fat_loss') {
+        targetCalories = Math.round(tdee - 450);
+      } else if (state.goal === 'muscle_building') {
+        targetCalories = Math.round(tdee + 350);
+      }
+
+      // 3. Macronutrient Targets
+      // Protein: 2.0g per kg for muscle building, 2.2g for fat loss, 1.8g for maintenance
+      let proteinMultiplier = 2.0;
+      if (state.goal === 'fat_loss') proteinMultiplier = 2.2;
+      if (state.goal === 'maintenance') proteinMultiplier = 1.8;
+
+      const targetProtein = Math.round(state.weight * proteinMultiplier);
+      const proteinCalories = targetProtein * 4;
+
+      // Fat: ~25% of total calories
+      const fatCalories = Math.round(targetCalories * 0.25);
+      const targetFats = Math.round(fatCalories / 9);
+
+      // Carbs: Remaining calories
+      const carbCalories = Math.max(300, targetCalories - (proteinCalories + fatCalories));
+      const targetCarbs = Math.round(carbCalories / 4);
+
+      // Update UI Metrics
+      document.getElementById('output-calories').textContent = targetCalories.toLocaleString();
+      document.getElementById('output-protein').textContent = `${targetProtein}g`;
+      document.getElementById('output-carbs').textContent = `${targetCarbs}g`;
+      document.getElementById('output-fats').textContent = `${targetFats}g`;
+
+      // 4. Update Customized Indian Meal Plan
+      const mealPlanTypeEl = document.getElementById('meal-plan-diet-type');
+      const mealPlanContentEl = document.getElementById('meal-plan-content');
+      mealPlanTypeEl.textContent = state.diet === 'veg' ? 'Pure Veg' : 'Non-Veg';
+      mealPlanTypeEl.className = state.diet === 'veg' ? 'text-emerald-400 font-bold' : 'text-rose-400 font-bold';
+
+      if (state.diet === 'veg') {
+        mealPlanContentEl.innerHTML = `
+          <div class="p-3 rounded-lg bg-[#16181D] border border-white/5">
+            <div class="flex items-center justify-between font-semibold text-white mb-1">
+              <span>Breakfast (08:30 AM)</span>
+              <span class="text-emerald-400 font-mono">~26g Protein</span>
+            </div>
+            <p class="text-slate-400">2 Moong Dal Chillas with Mint Chutney + 1 Bowl Sprouted Moong Chaat + 250ml Toned Milk or 1 Scoop Whey.</p>
+          </div>
+
+          <div class="p-3 rounded-lg bg-[#16181D] border border-white/5">
+            <div class="flex items-center justify-between font-semibold text-white mb-1">
+              <span>Lunch (01:30 PM)</span>
+              <span class="text-emerald-400 font-mono">~36g Protein</span>
+            </div>
+            <p class="text-slate-400">150g Low-fat Paneer Bhurji / Curry + 2 Multigrain Rotis + 1 Bowl Thick Dal Tadka + Curd (Dahi) + Cucumber & Beetroot Salad.</p>
+          </div>
+
+          <div class="p-3 rounded-lg bg-[#16181D] border border-white/5">
+            <div class="flex items-center justify-between font-semibold text-white mb-1">
+              <span>Pre-Workout / Evening Snack (05:30 PM)</span>
+              <span class="text-emerald-400 font-mono">~18g Protein</span>
+            </div>
+            <p class="text-slate-400">50g Roasted Chana + Roasted Makhana + 1 Banana + Green Tea or Sattu Cooler.</p>
+          </div>
+
+          <div class="p-3 rounded-lg bg-[#16181D] border border-white/5">
+            <div class="flex items-center justify-between font-semibold text-white mb-1">
+              <span>Dinner (08:30 PM)</span>
+              <span class="text-emerald-400 font-mono">~32g Protein</span>
+            </div>
+            <p class="text-slate-400">50g Soya Chunks Curry (Nutri) + 2 Phulkas or 1 Bowl Brown Rice + Stir-fried Seasonal Green Veggies + Curd.</p>
+          </div>
+        `;
+      } else {
+        mealPlanContentEl.innerHTML = `
+          <div class="p-3 rounded-lg bg-[#16181D] border border-white/5">
+            <div class="flex items-center justify-between font-semibold text-white mb-1">
+              <span>Breakfast (08:30 AM)</span>
+              <span class="text-rose-400 font-mono">~28g Protein</span>
+            </div>
+            <p class="text-slate-400">3 Whole Boiled Eggs / Masala Egg Bhurji + 2 Brown Bread slices OR Rolled Oats cooked with milk, nuts & banana.</p>
+          </div>
+
+          <div class="p-3 rounded-lg bg-[#16181D] border border-white/5">
+            <div class="flex items-center justify-between font-semibold text-white mb-1">
+              <span>Lunch (01:30 PM)</span>
+              <span class="text-rose-400 font-mono">~45g Protein</span>
+            </div>
+            <p class="text-slate-400">180g Grilled Chicken Breast / Homestyle Chicken Curry + Steamed Rice / 2 Phulkas + Dal Tadka + Fresh Green Salad.</p>
+          </div>
+
+          <div class="p-3 rounded-lg bg-[#16181D] border border-white/5">
+            <div class="flex items-center justify-between font-semibold text-white mb-1">
+              <span>Pre-Workout / Evening Snack (05:30 PM)</span>
+              <span class="text-rose-400 font-mono">~22g Protein</span>
+            </div>
+            <p class="text-slate-400">4 Boiled Egg Whites / Sprouted Chana Chaat with lime juice + Black Coffee or 1 Scoop Whey.</p>
+          </div>
+
+          <div class="p-3 rounded-lg bg-[#16181D] border border-white/5">
+            <div class="flex items-center justify-between font-semibold text-white mb-1">
+              <span>Dinner (08:30 PM)</span>
+              <span class="text-rose-400 font-mono">~38g Protein</span>
+            </div>
+            <p class="text-slate-400">150g Chicken Tikka / Pan-seared Fish Curry + 2 Whole Wheat Rotis + Mixed Green Vegetables + Mint Raita.</p>
+          </div>
+        `;
+      }
+
+      // 5. Update WhatsApp CTA Link with dynamic stats
+      const goalName = state.goal === 'fat_loss' ? 'Fat Loss (Shred)' : (state.goal === 'muscle_building' ? 'Muscle Building (Bulk)' : 'Lean Maintenance');
+      const dietName = state.diet === 'veg' ? 'Pure Veg' : 'Non-Veg';
+      const msg = `Hi Prime FitHit team! I just checked my stats on your website: Weight ${state.weight}kg, Height ${state.height}cm, Goal: ${goalName}, Preference: ${dietName}, Daily Calories: ${targetCalories} kcal. Can your coach share my customized workout & diet routine at Omega City?`;
+      
+      const whatsappBtn = document.getElementById('btn-whatsapp-diet');
+      if (whatsappBtn) {
+        whatsappBtn.href = `https://wa.me/91837800084?text=${encodeURIComponent(msg)}`;
+      }
+    }
+
+    // Initial computation
+    computeDietBlueprint();
+  </script>
+</body>
+</html>
